@@ -12,6 +12,12 @@ bun add cloudflare-smtp
 npm install cloudflare-smtp
 ```
 
+You can also install directly from GitHub:
+
+```sh
+npm install github:Bruol/cloudflare-smtp
+```
+
 ## Quick Start
 
 ```ts
