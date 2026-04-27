@@ -1,6 +1,6 @@
 {
 	"name": "cloudflare-smtp",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Tiny SMTP client for Cloudflare Workers with TLS and STARTTLS support.",
 	"type": "module",
 	"main": "./dist/index.js",
