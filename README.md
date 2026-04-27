@@ -127,3 +127,21 @@ Sends one plain-text email.
 This package is built for Cloudflare Workers and requires the `cloudflare:sockets` runtime module. It is not a Node.js SMTP client.
 
 The current message builder sends plain-text email with UTF-8 headers and body content.
+
+## Publishing
+
+This repository publishes to npm from GitHub Actions with npm trusted publishing.
+
+In npm package settings, add this trusted publisher:
+
+- Publisher: GitHub Actions
+- Organization or user: `Bruol`
+- Repository: `cloudflare-smtp`
+- Workflow filename: `publish.yml`
+
+Then publish a new version by pushing a matching tag:
+
+```sh
+npm version patch
+git push --follow-tags
+```
