@@ -1,0 +1,46 @@
+{
+	"name": "cloudflare-smtp",
+	"version": "0.1.0",
+	"description": "Tiny SMTP client for Cloudflare Workers with TLS and STARTTLS support.",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"check": "tsc -p tsconfig.json --noEmit",
+		"prepublishOnly": "bun run build"
+	},
+	"keywords": [
+		"cloudflare",
+		"workers",
+		"smtp",
+		"email",
+		"tls",
+		"starttls"
+	],
+	"author": "Bruol",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Bruol/cloudflare-smtp.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Bruol/cloudflare-smtp/issues"
+	},
+	"homepage": "https://github.com/Bruol/cloudflare-smtp#readme",
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20260214.0",
+		"typescript": "^5.9.3"
+	}
+}
